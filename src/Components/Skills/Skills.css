@@ -1,0 +1,118 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.skills-title{
+    position: relative;
+}
+.skills-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.skills-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.skills-format{
+   
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s ;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+.skills-container h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.skills-container h2{
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 10px;
+
+    background: linear-gradient(270deg, #42cef5 50.41%,#e651c8 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skills-format ul {
+  
+    margin-top: 20px;
+    list-style: none;
+  }
+  
+  .skills-format li {
+    margin-bottom: 6px;
+  }
+  .skills-format:hover{
+    border: 2px solid #e651c8;
+    background-image:linear-gradient(45deg, #3f0028,#122252);
+    transform: scale(1.05);
+    transition: 0.4s;
+  }
+  @media(max-width: 786px){
+    .skills{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+    }
+    .skills-title h1{
+        padding: 0;
+        font-size:50px ;
+    }
+    .skills-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .skills-format{
+        gap: 20px;
+        padding: 32px;
+    }
+    .skills-format h2{
+        font-size: 28px;
+    }
+    .skills-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .skills-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+  }
+  @media(max-width: 480px){
+    .skills{
+        align-items: center;
+        gap: 70px;
+        margin: 50px 40px;
+    }
+   
+    .skills-format{
+        padding: 35px;
+    }
+    .skills-format h2{
+        font-size: 28px;
+    }
+    .skills-format ul{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .skills-container{
+        grid-template-columns: 1fr ;
+        gap: 30px;
+    }
+  }

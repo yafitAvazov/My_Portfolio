@@ -1,0 +1,111 @@
+.myprojects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.myprojects-title{
+    position: relative;
+}
+.myprojects-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.myprojects-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.myprojects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    /* border: 1px solid transparent;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    background: ); */
+}
+.myprojects-container img{
+    box-sizing:border-box ;
+    width: 419px;
+    height: 280;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.myprojects-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.myprojects-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+}
+@media(max-width: 768px){
+    .myprojects{
+        gap: 50px;
+        margin: 20px 70px;
+        align-items: center;
+    }
+    
+    .myprojects-title h1{
+        padding: 0;
+        font-size:48px ;
+    }
+    .myprojects-title img{
+         width: 130px;
+        margin-right: -20px;
+    }
+    .myprojects-container{
+        grid-template-columns:  1fr;
+        gap:30px;
+       
+    }
+   .myprojects-showmore{
+        padding: 20px 50px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+   }
+   .myprojects-container img{
+    width: 480px;
+    
+}
+}
+@media(max-width: 480px){
+    .myprojects{
+        align-items: center;
+        gap: 70px;
+        margin: 50px 40px;
+    }
+   
+
+    .myprojects-container{
+        grid-template-columns:  1fr;
+        gap:30px;
+        justify-content: center;
+        width: 100%;
+    }
+   .myprojects-showmore{
+        padding: 20px 50px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+   }
+   .myprojects-container img{
+    width: 360px;
+    
+}
+}

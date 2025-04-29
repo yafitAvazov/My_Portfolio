@@ -1,0 +1,82 @@
+.card {
+    background-color: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    width: 420px;
+    margin: 20px;
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-image {
+    object-fit: cover;
+  
+  }
+ 
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h2 {
+    font-size: 30px;
+    margin: 10px 0;
+    background: linear-gradient(270deg, #42cef5 50.41%,#e651c8 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-content p {
+    font-size: 20px;
+    margin: 10px 0;
+  
+  }
+  
+  .card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background-color: #e651c8;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #5a58f0;
+  }
+  
+  .visit {
+    background-color: #1e90ff;
+  }
+  @media(max-width:768px){
+    .card {
+        width: 480px;
+      }
+      
+      .card-content p {
+        line-height: 30px;
+      
+      }
+    }
+  @media(max-width:480px){
+    .card {
+        width: 360px;
+      }
+      
+      .card-content p {
+        line-height: 30px;
+      
+      }
+      
+  }
