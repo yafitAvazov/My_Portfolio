@@ -1,12 +1,20 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, image, techStack, githubLink, liveLink }) => {
+const Card = ({ title, image, description, contribution, techStack, githubLink, liveLink }) => {
   return (
     <div className="card">
       <img src={image} alt={title} className="card-image" />
       <div className="card-content">
         <h2>{title}</h2>
+        {description && <p>{description}</p>}
+        {contribution && (
+          <ul>
+            {contribution.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
         <p>{techStack}</p>
         <div className="card-buttons">
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn">Github</a>

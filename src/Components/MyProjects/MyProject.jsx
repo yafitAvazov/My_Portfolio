@@ -9,7 +9,7 @@ const MyProject = () => {
   return (
     <div id='projects' className='myprojects'>
         <div className='myprojects-title'>
-            <h1>My Pojects</h1>
+            <h1>Featured Projects</h1>
             <img src={theme_pattern} alt=''/>            
         </div>
         <div className='myprojects-container'>
@@ -18,6 +18,8 @@ const MyProject = () => {
           key={item.w_no}
           title={item.w_name}
           image={item.w_img}
+          description={item.description}
+          contribution={item.contribution}
           techStack={item.techStack}
           githubLink={item.githubLink}
           liveLink={item.liveLink}

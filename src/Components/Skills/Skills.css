@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 80px 120px;
 }
 .skills-title{
     position: relative;
@@ -21,25 +21,28 @@
     z-index: -1;
 }
 .skills-format{
-   
-    gap: 20px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 28px;
     border-radius: 10px;
     border: 2px solid white;
     transition: 0.4s ;
 }
 .skills-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
     margin-bottom: 80px;
+    width: 100%;
+    max-width: 1120px;
 }
 .skills-container h3{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
 }
 .skills-container h2{
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
     margin-top: 10px;
 
@@ -48,10 +51,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.skills-format p {
+    font-size: 18px;
+    line-height: 28px;
+}
 .skills-format ul {
-  
-    margin-top: 20px;
+    margin-top: 4px;
     list-style: none;
+    font-size: 18px;
+    line-height: 29px;
   }
   
   .skills-format li {
@@ -79,7 +87,7 @@
     }
     .skills-format{
         gap: 20px;
-        padding: 32px;
+        padding: 28px;
     }
     .skills-format h2{
         font-size: 28px;
@@ -89,9 +97,13 @@
         line-height: 32px;
         max-width: 300px;
     }
+  }
+  @media(max-width: 900px){
+    .skills{
+        margin: 50px 40px;
+    }
     .skills-container{
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        grid-template-columns: 1fr;
     }
   }
   @media(max-width: 480px){

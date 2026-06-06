@@ -15,6 +15,7 @@ const Skills = () => {
             return <div key={index} className='skills-format'>
             <h3>{skill.s_no}</h3>
             <h2>{skill.s_name}</h2>
+            {skill.s_summary && <p>{skill.s_summary}</p>}
             <ul>
               {skill.s_desc.map((item, i) => (
                 <li key={i}>{item}</li>

@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile from '../../assets/profile3.JPG'
+import profile from '../../assets/profile_img.jpeg'
 
 const About = () => {
   return (
@@ -17,22 +17,27 @@ const About = () => {
         <div className='about-right'>
             <div className='about-para'>
             <p>
-              I’m a passionate and creative front-end developer with a strong foundation in both design and software engineering.
-              My journey into tech started during my military service as a network manager, where I developed strong problem-solving
-              skills and a deep understanding of system architecture.
+              I build digital experiences at the intersection of design, product, and technology. My work connects
+              business needs, user journeys, content structure, frontend logic, and polished implementation into
+              practical solutions that feel clear, useful, and visually refined.
             </p>
             <p>
-              Since then, I’ve led and contributed to various projects—from an AI-powered sign language learning platform to a smart
-              Android recommendation app—each one emphasizing intuitive UI/UX and clean, efficient code. With experience in React,
-              HTML, CSS, JavaScript, and backend technologies, I thrive at the intersection of visual design and functional development.
-              I’m always excited to turn ideas into interactive digital experiences.
+              As a Tech Designer / Design Engineer at Wix Marketing, I planned and built responsive web experiences
+              using Wix Studio, CMS-based structures, reusable web flows, and frontend-oriented thinking. I translated
+              creative, product, and marketing briefs into digital experiences, collaborating with designers, developers,
+              product stakeholders, and marketing teams from planning through QA, refinement, and launch.
+            </p>
+            <p>
+              I hold a B.Sc. in Computer Science from HIT and completed a Product Management program through Women in Tech
+              at HIT. My background includes AI and computer vision projects, Android development, client-server applications,
+              UX/UI-oriented frontend work, QA, accessibility awareness, SEO awareness, and social-impact mentoring in STEM.
             </p>
             </div>
             <div className='about-skills'>
-                <div className='about-skill'><p>HTML & CSS</p><hr style={{width:"50%"}}/></div>
-                <div className='about-skill'><p>React Js</p><hr style={{width:"70%"}}/></div>
-                <div className='about-skill'><p>JavaScript</p><hr style={{width:"60%"}}/></div>
-                <div className='about-skill'><p>Next Js</p><hr style={{width:"50%"}}/></div>
+                <div className='about-skill'><p>Design Engineering</p><hr style={{width:"85%"}}/></div>
+                <div className='about-skill'><p>Product Thinking</p><hr style={{width:"80%"}}/></div>
+                <div className='about-skill'><p>Frontend Development</p><hr style={{width:"75%"}}/></div>
+                <div className='about-skill'><p>CMS & Web Solutions</p><hr style={{width:"70%"}}/></div>
             </div>
         </div>
         </div>

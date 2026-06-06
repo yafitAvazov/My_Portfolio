@@ -37,12 +37,13 @@ const Contact = () => {
         <div className='contact-section'>
             <div className='contact-left'>
                 <h1>Let's Connect</h1>
-                <p> I'm a Computer Science student passionate about Frontend development, user experience, and product thinking.
-                    Beyond just writing code, I care deeply about how products feel, how users interact with them, and how technology can solve real problems.
+                <p>
+                    I'm looking for opportunities where I can combine design engineering, digital solution-building,
+                    UX/UI-oriented frontend development, CMS/web implementation, product thinking, and AI-powered product experiences.
                 </p>
                 <p>
-                    I'm currently looking for my first opportunity as a Frontend Developer — in a team that values design, usability, and impact. 
-                    If you're looking for someone who combines development skills with a product-oriented mindset, I'd love to connect.
+                    If you're building user-focused digital experiences and need someone who can understand the brief,
+                    structure the solution, implement carefully, and refine toward launch, I'd love to connect.
                 </p>
                 <div className='contact-details'>
                     <div className='contact-detail'>
@@ -63,7 +64,7 @@ const Contact = () => {
                 <label htmlFor='' >Your Email </label>
                 <input type='email' placeholder='Enter your email' name='email'/>
                 <label htmlFor='' >Write your message here </label>
-                <textarea name='message' rows="8" placeholder='Enter your massage'/>
+                <textarea name='message' rows="8" placeholder='Enter your message'/>
                 <button type='submit' className='contact-submit'>Submit now</button>
             </form>
         </div>
