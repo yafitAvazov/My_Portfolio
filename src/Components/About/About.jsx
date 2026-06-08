@@ -41,22 +41,20 @@ const About = () => {
             </div>
         </div>
         </div>
-            {/* <div className='about-achievements'>
+            <div className='about-achievements'>
                 <div className='about-achievement'>
                     <h1>Self-Taught Web Development</h1>
                     <p>Dedicated hundreds of hours to learning front-end technologies through online courses, personal projects, and continuous experimentation.</p>
                 </div>
-                <hr />
                 <div className='about-achievement'>
                     <h1>UX-Focused Design</h1>
                     <p>Designed and implemented user-centric applications, emphasizing clean layout, accessibility, and responsive design across devices.</p>
                 </div>
-                <hr />
                 <div className='about-achievement'>
                     <h1>Creative Eye for Design</h1>
                     <p>Passionate about visual design and layout — I love crafting interfaces that not only function well, but also look and feel great to use.</p>
                 </div>
-            </div> */}
+            </div>
         </div>
    
 

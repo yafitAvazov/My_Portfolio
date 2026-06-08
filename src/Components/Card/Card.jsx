@@ -15,7 +15,7 @@ const Card = ({ title, image, description, contribution, techStack, githubLink, 
             ))}
           </ul>
         )}
-        <p>{techStack}</p>
+        <p className="card-tech">{techStack}</p>
         <div className="card-buttons">
           <a href={githubLink} target="_blank" rel="noopener noreferrer" className="btn">Github</a>
           {liveLink && (

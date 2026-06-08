@@ -13,9 +13,13 @@ const Skills = () => {
         <div className='skills-container'>
           {Skills_Data.map((skill,index)=>{
             return <div key={index} className='skills-format'>
-            <h3>{skill.s_no}</h3>
-            <h2>{skill.s_name}</h2>
-            {skill.s_summary && <p>{skill.s_summary}</p>}
+            <div className='skills-heading'>
+              <h3>{skill.s_no}</h3>
+              <div>
+                <h2>{skill.s_name}</h2>
+                {skill.s_summary && <p>{skill.s_summary}</p>}
+              </div>
+            </div>
             <ul>
               {skill.s_desc.map((item, i) => (
                 <li key={i}>{item}</li>

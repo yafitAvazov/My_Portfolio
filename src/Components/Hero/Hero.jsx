@@ -4,6 +4,8 @@ import profile from '../../assets/profile_img.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = () => {
+  const resumeUrl = `${import.meta.env.BASE_URL}Yafit_Abaev_CV.pdf`
+
   return (
     <div id='home' className='hero'>
       <img src={profile} alt=''/>
@@ -13,8 +15,16 @@ const Hero = () => {
         to create polished, user-focused digital experiences.
       </p>
       <div className='hero-action'>
-        <div className='hero-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'></AnchorLink>Connect With Me</div>
-        <div className='hero-resume'>My resume</div>
+        <AnchorLink className='hero-connect anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink>
+        <a
+          className='hero-resume'
+          href={resumeUrl}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='Open Yafit Abaev resume PDF in a new tab'
+        >
+          My resume
+        </a>
       </div>
     </div>
   )

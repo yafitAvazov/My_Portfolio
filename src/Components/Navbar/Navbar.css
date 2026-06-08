@@ -1,93 +1,136 @@
-.navbar{
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    width: var(--container);
+    min-height: 76px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
-
+    justify-content: flex-end;
+    gap: 28px;
+    margin: 0 auto;
+    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    background: rgba(17, 16, 15, 0.72);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(18px);
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 60px;
-    font-size: 20px;
-   
+    gap: clamp(18px, 3vw, 40px);
+    color: var(--muted);
+    font-size: 16px;
+    font-weight: 650;
 }
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #42cef5 0.36%,#df60c5 102.06%);
-    font-size: 22px;
+
+.nav-connect {
+    border-radius: 999px;
+    background: linear-gradient(267deg, var(--cyan) 0.36%, var(--pink) 102.06%);
+    color: #11100f;
+    font-size: 16px;
+    font-weight: 800;
     cursor: pointer;
+    transition: transform 180ms ease, box-shadow 180ms ease;
 }
-.nav-connect:hover{
-    transform: scale(1.05);
+
+.nav-connect .anchor-link {
+    display: inline-flex;
+    padding: 13px 20px;
 }
-.nav-menu li{
+
+.nav-connect:hover {
+    box-shadow: 0 16px 36px rgba(66, 206, 245, 0.18);
+}
+
+.nav-menu li {
+    min-height: 34px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
     cursor: pointer;
 }
-.nav-menu li img{
-    display: flex;
-    margin: auto;
-}
-.anchor-link{
-    text-decoration: none;
-    color: white;
-}
-.nav-mob-close{
-    display: none;
-}
-.nav-mob-open{
-    display: none;
-}
-@media (max-width:768px) {
-    .navbar{
-        margin: 20px 50px ;
-    }
-    .nav-connect{
-        display: none;
 
+.nav-menu li p {
+    transition: color 180ms ease;
+}
+
+.nav-menu li:hover p {
+    color: var(--text);
+}
+
+.nav-menu li.nav-active p {
+    color: var(--text);
+}
+
+.nav-menu li img {
+    width: 28px;
+    height: 8px;
+    object-fit: contain;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-mob-close,
+.nav-mob-open {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        min-height: 68px;
+        justify-content: flex-end;
+        padding: 10px 14px;
     }
-    .nav-mob-open{
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
         display: block;
-        position: fixed;
-        top:30px;
-        right: 20px;
-        width:30px;
+        position: static;
+        width: 32px;
+        cursor: pointer;
+        z-index: 21;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 30px;
         cursor: pointer;
     }
-    .nav-mob-close{
-        display: block;
-        position: relative;
-        top:30px;
-        left: 290px;
-        width:30px;
-    }
-    .nav-menu{
+
+    .nav-menu {
         position: fixed;
         flex-direction: column;
-        align-items: start;
-        top:0;
-        gap: 30px;
-        background-color: #1F0016;
-        width: 350px;
-        height: 100%;
-        z-index: 2;
-        transition: right 0.5s;
-       right: -350px;
+        align-items: flex-start;
+        top: 0;
+        right: -320px;
+        gap: 22px;
+        width: min(320px, 86vw);
+        height: 100vh;
+        padding: 92px 32px 32px;
+        background: rgba(18, 13, 22, 0.96);
+        border-left: 1px solid var(--border);
+        box-shadow: -30px 0 70px rgba(0, 0, 0, 0.42);
+        z-index: 22;
+        transition: right 240ms ease;
     }
-    .nav-menu li{
-        font-size: 30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap: 20px;
+
+    .nav-menu li {
+        min-height: auto;
+        align-items: flex-start;
+        font-size: 24px;
     }
-    
 }
-@media (max-width: 480px) {
-    
-  }
-  
