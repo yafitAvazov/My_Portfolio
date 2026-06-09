@@ -60,37 +60,6 @@
     line-height: 1.68;
 }
 
-.about-skills {
-    display: grid;
-    gap: 16px;
-}
-
-.about-skill {
-    display: grid;
-    grid-template-columns: minmax(170px, 220px) 1fr;
-    gap: 22px;
-    align-items: center;
-    padding: 16px 18px;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: var(--surface);
-    transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
-}
-
-.about-skill p {
-    color: var(--text);
-    font-size: 17px;
-    font-weight: 720;
-}
-
-.about-skill hr {
-    outline: none;
-    border: none;
-    height: 8px;
-    border-radius: 999px;
-    background: linear-gradient(264deg, var(--cyan) -5.09%, var(--pink) 106.28%);
-}
-
 .about-achievements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -154,8 +123,4 @@
         align-items: stretch;
     }
 
-    .about-skill {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
 }

@@ -33,12 +33,6 @@ const About = () => {
               UX/UI-oriented frontend work, QA, accessibility awareness, SEO awareness, and social-impact mentoring in STEM.
             </p>
             </div>
-            <div className='about-skills'>
-                <div className='about-skill'><p>Design Engineering</p><hr style={{width:"85%"}}/></div>
-                <div className='about-skill'><p>Product Thinking</p><hr style={{width:"80%"}}/></div>
-                <div className='about-skill'><p>Frontend Development</p><hr style={{width:"75%"}}/></div>
-                <div className='about-skill'><p>CMS & Web Solutions</p><hr style={{width:"70%"}}/></div>
-            </div>
         </div>
         </div>
             <div className='about-achievements'>
